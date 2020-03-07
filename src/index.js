@@ -1,42 +1,32 @@
 import readlineSync from 'readline-sync';
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-
-const greeting = () => {
+const playGames = (game, rule) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log(rule);
+
   let attempts = 0;
 
-  const eventNum = () => {
-    let num;
-    let correctUnswer;
-    do {
-      console.log(`Question: ${num = getRandomInt(100)}`);
-      if (num % 2 === 0) {
-        correctUnswer = 'yes';
-      } else if (num % 2 !== 0) {
-        correctUnswer = 'no';
-      }
-      const answerUser = readlineSync.question('Your answer: ');
-      if (correctUnswer === answerUser) {
-        console.log('Correct!');
-        attempts += 1;
-      } else {
-        console.log(`"${answerUser}" is wrong answer ;( Correct answer was "${correctUnswer}".`);
-        break;
-      }
-    } while (attempts < 3);
-  };
-  eventNum();
+  do {
+    const gameStart = game();
+    const question = gameStart.questionGame;
+    const solve = gameStart.correctAnswer;
+    console.log(`Question: ${question}`);
+    const answerUser = readlineSync.question('Your answer: ');
+    if (solve === answerUser) {
+      console.log('Correct!');
+      attempts += 1;
+    } else {
+      console.log(`"${answerUser}" is wrong answer ;( Correct answer was "${solve}".`);
+      break;
+    }
+  } while (attempts < 3);
+
   if (attempts === 3) {
     console.log(`Congratulations, ${userName}!`);
   } else {
     console.log(`Let's try again, ${userName}`);
   }
 };
-
-export default greeting;
+export default playGames;
