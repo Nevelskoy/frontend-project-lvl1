@@ -16,7 +16,7 @@ const eventNum = (number) => {
 const gameEven = () => {
   const numRandom = getRandomInt(100);
   const gameData = {
-    questionGame: `Question: ${numRandom}`,
+    questionGame: `${numRandom}`,
     correctAnswer: eventNum(numRandom),
   };
   return gameData;
