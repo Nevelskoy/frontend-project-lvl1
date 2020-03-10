@@ -3,7 +3,7 @@ import playGames from '../index.js';
 
 const gameRule = 'What is the result of the expression?';
 
-const calculate = (operator, numOne, numTwo) => {
+const calcNum = (operator, numOne, numTwo) => {
   let answer;
   if (operator === '+') {
     answer = String(numOne + numTwo);
@@ -22,7 +22,7 @@ const gameCalculate = () => {
   const operator = signs[getRandomInt(3)];
   const gameData = {
     questionGame: `${numOne} ${operator} ${numTwo}`,
-    correctAnswer: calculate(operator, numOne, numTwo),
+    correctAnswer: calcNum(operator, numOne, numTwo),
   };
   return gameData;
 };
