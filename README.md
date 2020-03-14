@@ -5,11 +5,11 @@
 
 Game #1. Answer "yes" if the number is even, otherwise answer "no".
 
-[![asciicast](https://asciinema.org/a/TEn1GhZ63DZEA1TDdph9z5sP7.svg)](https://asciinema.org/a/TEn1GhZ63DZEA1TDdph9z5sP7)
+[![asciicast](https://asciinema.org/a/G94ENmJXN79x5KsxYGJeRxXMZ.svg)](https://asciinema.org/a/G94ENmJXN79x5KsxYGJeRxXMZ)
 
 Game #2. What is the result of the expression?
 
-[![asciicast](https://asciinema.org/a/u3rWCWdx2uPHawrViTURyA5S3.svg)](https://asciinema.org/a/u3rWCWdx2uPHawrViTURyA5S3)
+[![asciicast](https://asciinema.org/a/bEP3qA0TSuEQM0yutt4nyt0Lr.svg)](https://asciinema.org/a/bEP3qA0TSuEQM0yutt4nyt0Lr)
 
 Game #3. Find the greatest common divisor of given numbers.
 
