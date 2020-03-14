@@ -21,4 +21,4 @@ Game #4. What number is missing in the progression?
 
 Game #5. Answer "yes" if given number is prime. Otherwise answer "no".
 
-[![asciicast](https://asciinema.org/a/gtAvrO8ZL2PYtj3tHpQXzG1Ge.svg)](https://asciinema.org/a/gtAvrO8ZL2PYtj3tHpQXzG1Ge)
+[![asciicast](https://asciinema.org/a/8huW9g9RDWHlDLDAupXey5ecZ.svg)](https://asciinema.org/a/8huW9g9RDWHlDLDAupXey5ecZ)
