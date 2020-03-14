@@ -5,9 +5,10 @@ const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const eventNum = (number) => {
   let correctAnswer;
-  if (number % 2 === 0) {
+  let parityControl = 2;
+  if (number % parityControl === 0) {
     correctAnswer = 'yes';
-  } else if (number % 2 !== 0) {
+  } else if (number % parityControl !== 0) {
     correctAnswer = 'no';
   }
   return correctAnswer;
