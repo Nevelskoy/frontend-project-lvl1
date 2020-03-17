@@ -3,6 +3,25 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 [![Build Status](https://travis-ci.com/Nevelskoy/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/Nevelskoy/frontend-project-lvl1)
 
+### Description:
+This package includes 5 games.
+
+### Installation:
+1. git clone https://github.com/Nevelskoy/frontend-project-lvl1.git
+2. make install
+3. make publish
+4. sudo npm link
+
+### How to play:
+Just type in terminal name of the game:
+* Brain-calc
+* Brain-even
+* Brain-gcd
+* Brain-prime
+* Brain-progression
+
+---
+
 Game #1. Answer "yes" if the number is even, otherwise answer "no".
 
 [![asciicast](https://asciinema.org/a/G94ENmJXN79x5KsxYGJeRxXMZ.svg)](https://asciinema.org/a/G94ENmJXN79x5KsxYGJeRxXMZ)
