@@ -6,9 +6,7 @@ const playGames = (game, rule) => {
   console.log(`Hello, ${userName}!`);
   console.log(rule);
 
-  let attempts = 0;
-
-  do {
+  for (let attempts = 0; attempts < 3; attempts += 1) {
     const gameStart = game();
     const question = gameStart.questionGame;
     const solve = gameStart.correctAnswer;
@@ -16,17 +14,15 @@ const playGames = (game, rule) => {
     const answerUser = readlineSync.question('Your answer: ');
     if (solve === answerUser) {
       console.log('Correct!');
-      attempts += 1;
+      if (attempts === 2) {
+        console.log(`Congratulations, ${userName}!`);
+        break;
+      }
     } else {
       console.log(`"${answerUser}" is wrong answer ;( Correct answer was "${solve}".`);
+      console.log(`Let's try again, ${userName}`);
       break;
     }
-  } while (attempts < 3);
-
-  if (attempts === 3) {
-    console.log(`Congratulations, ${userName}!`);
-  } else {
-    console.log(`Let's try again, ${userName}`);
   }
 };
 export default playGames;
