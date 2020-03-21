@@ -11,6 +11,7 @@ This package includes 5 mini-games in console.
 2. make install
 3. make publish
 4. sudo npm link
+5. make start
 
 ### How to play:
 Just type in terminal name of the game:
