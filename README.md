@@ -2,7 +2,7 @@
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 [![Build Status](https://travis-ci.com/Nevelskoy/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/Nevelskoy/frontend-project-lvl1)
-![Node.js CI](https://github.com/Nevelskoy/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)(https://github.com/Nevelskoy/frontend-project-lvl1/actions)
+![Node.js CI](https://github.com/Nevelskoy/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)
 
 ### Description:
 This package includes 5 mini-games in console:
