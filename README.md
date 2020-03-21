@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.com/Nevelskoy/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/Nevelskoy/frontend-project-lvl1)
 
 ### Description:
-This package includes 5 mini-games in console. 
+This package includes 5 mini-games in console:
 * The parity of a number.
 * The result of the expression.
 * The greatest common divisor.
