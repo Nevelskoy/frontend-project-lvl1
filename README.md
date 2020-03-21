@@ -5,7 +5,7 @@
 
 ### Description:
 This package includes 5 mini-games in console:
-* The parity of a number.
+* Even and Odd Numbers
 * The result of the expression.
 * The greatest common divisor.
 * The missing number in arithmetic progression.
