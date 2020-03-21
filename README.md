@@ -5,11 +5,11 @@
 
 ### Description:
 This package includes 5 mini-games in console. 
-* Answer "yes" if the number is even, otherwise answer "no". 
-* What is the result of the expression? 
-* Find the greatest common divisor of given numbers. 
-* What number is missing in the progression? 
-* Answer "yes" if given number is prime. Otherwise answer "no". 
+* The parity of a number.
+* The result of the expression.
+* The greatest common divisor.
+* The missing number in arithmetic progression.
+* The prime number. 
 
 ### Installation:
 1. git clone https://github.com/Nevelskoy/frontend-project-lvl1.git
