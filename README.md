@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.com/Nevelskoy/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/Nevelskoy/frontend-project-lvl1)
 
 ### Description:
-This package includes 5 games.
+This package includes 5 mini-games in console.
 
 ### Installation:
 1. git clone https://github.com/Nevelskoy/frontend-project-lvl1.git
