@@ -30,11 +30,11 @@ $ make start
 
 ### How to play:
 Just type in terminal name of the game:
-* Brain-calc
-* Brain-even
-* Brain-gcd
-* Brain-prime
-* Brain-progression
+* brain-calc
+* brain-even
+* brain-gcd
+* brain-prime
+* brain-progression
 
 ---
 
