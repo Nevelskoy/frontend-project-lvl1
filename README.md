@@ -19,11 +19,15 @@ $ git clone https://github.com/Nevelskoy/frontend-project-lvl1.git
 ```sh
 $ make install
 ```
-1. git clone https://github.com/Nevelskoy/frontend-project-lvl1.git
-2. make install
-3. make publish
-4. sudo npm link
-5. make start
+```sh
+$ make publish
+```
+```sh
+$ sudo npm link
+```
+```sh
+$ make start
+```
 
 ### How to play:
 Just type in terminal name of the game:
