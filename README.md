@@ -4,12 +4,12 @@
 [![Build Status](https://travis-ci.com/Nevelskoy/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/Nevelskoy/frontend-project-lvl1)
 
 ### Description:
-This package includes 5 mini-games in console.
-Game #1. Answer "yes" if the number is even, otherwise answer "no".
-Game #2. What is the result of the expression?
-Game #3. Find the greatest common divisor of given numbers.
-Game #4. What number is missing in the progression?
-Game #5. Answer "yes" if given number is prime. Otherwise answer "no".
+This package includes 5 mini-games in console. 
+* Answer "yes" if the number is even, otherwise answer "no". 
+* What is the result of the expression? 
+* Find the greatest common divisor of given numbers. 
+* What number is missing in the progression? 
+* Answer "yes" if given number is prime. Otherwise answer "no". 
 
 ### Installation:
 1. git clone https://github.com/Nevelskoy/frontend-project-lvl1.git
