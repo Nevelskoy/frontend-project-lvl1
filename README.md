@@ -13,6 +13,12 @@ This package includes 5 mini-games in console:
 * The prime number. 
 
 ### Installation:
+```sh
+$ git clone https://github.com/Nevelskoy/frontend-project-lvl1.git
+```
+```sh
+$ make install
+```
 1. git clone https://github.com/Nevelskoy/frontend-project-lvl1.git
 2. make install
 3. make publish
