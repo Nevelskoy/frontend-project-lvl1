@@ -12,7 +12,7 @@ This package includes 5 mini-games in console:
 * The missing number in arithmetic progression.
 * The prime number. 
 
-### Installation:
+### Setup:
 ```sh
 $ git clone https://github.com/Nevelskoy/frontend-project-lvl1.git
 ```
