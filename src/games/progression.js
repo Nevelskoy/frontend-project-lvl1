@@ -4,7 +4,7 @@ import playGames from '../index.js';
 const gameRule = 'What number is missing in the progression?';
 let answer = 0;
 
-const hiddenArray = (array, dot) => {
+const getHiddenNum = (array, dot) => {
   answer = array[dot];
   const newArr = array.splice(dot, 1, '..');
   return newArr;
@@ -16,7 +16,7 @@ const getProgression = (step, start, dot) => {
     i += step;
     array.push(i);
   }
-  hiddenArray(array, dot);
+  getHiddenNum(array, dot);
   return array;
 };
 
