@@ -38,22 +38,22 @@ Just type in terminal name of the game:
 
 ---
 
-Game #1. Even and Odd Numbers.
+Game #1. Even and odd Numbers.
 
-[![asciicast](https://asciinema.org/a/G94ENmJXN79x5KsxYGJeRxXMZ.svg)](https://asciinema.org/a/G94ENmJXN79x5KsxYGJeRxXMZ)
+[![asciicast](https://asciinema.org/a/FP5emjpSNX194srIAHxcBLq6b.svg)](https://asciinema.org/a/FP5emjpSNX194srIAHxcBLq6b)
 
 Game #2. The result of the expression.
 
-[![asciicast](https://asciinema.org/a/bEP3qA0TSuEQM0yutt4nyt0Lr.svg)](https://asciinema.org/a/bEP3qA0TSuEQM0yutt4nyt0Lr)
+[![asciicast](https://asciinema.org/a/4Xlm2zdXiFWjKg4aH60X2U4nZ.svg)](https://asciinema.org/a/4Xlm2zdXiFWjKg4aH60X2U4nZ)
 
 Game #3. The greatest common divisor.
 
-[![asciicast](https://asciinema.org/a/5IdAbyzW8ktqzE4Up0m9MyRAO.svg)](https://asciinema.org/a/5IdAbyzW8ktqzE4Up0m9MyRAO)
+[![asciicast](https://asciinema.org/a/7gFEwNjsPPbyeI5IhYe7zbVie.svg)](https://asciinema.org/a/7gFEwNjsPPbyeI5IhYe7zbVie)
 
 Game #4. The missing number in arithmetic progression.
 
-[![asciicast](https://asciinema.org/a/8BcdGWCDcXtHjrnM9Q85bBJNj.svg)](https://asciinema.org/a/8BcdGWCDcXtHjrnM9Q85bBJNj)
+[![asciicast](https://asciinema.org/a/3F59AO9NhaMuuROwzwbr4ai0s.svg)](https://asciinema.org/a/3F59AO9NhaMuuROwzwbr4ai0s)
 
 Game #5.The prime number.
 
-[![asciicast](https://asciinema.org/a/8huW9g9RDWHlDLDAupXey5ecZ.svg)](https://asciinema.org/a/8huW9g9RDWHlDLDAupXey5ecZ)
+[![asciicast](https://asciinema.org/a/vTs4pY3CLWDx85YGliu7ToQSL.svg)](https://asciinema.org/a/vTs4pY3CLWDx85YGliu7ToQSL)
