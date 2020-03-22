@@ -38,7 +38,7 @@ Just type in terminal name of the game:
 
 ---
 
-Game #1. The parity of a number.
+Game #1. Even and Odd Numbers.
 
 [![asciicast](https://asciinema.org/a/G94ENmJXN79x5KsxYGJeRxXMZ.svg)](https://asciinema.org/a/G94ENmJXN79x5KsxYGJeRxXMZ)
 
