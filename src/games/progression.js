@@ -10,7 +10,7 @@ const hiddenArray = (array, dot) => {
   return newArr;
 };
 
-const progressionNum = (step, start, dot) => {
+const getProgression = (step, start, dot) => {
   const array = [];
   for (let i = start; array.length < 10; i += 1) {
     i += step;
@@ -20,16 +20,16 @@ const progressionNum = (step, start, dot) => {
   return array;
 };
 
-const gameProgression = () => {
+const getGameData = () => {
   const interval = [2, 3, 4, 5, 6];
-  const stepRandom = getRandomInt(4);
+  const stepRandom = getRandomInt(0, 4);
   const step = interval[stepRandom];
-  const start = getRandomInt(100);
-  const dot = getRandomInt(10);
+  const start = getRandomInt(0, 100);
+  const dot = getRandomInt(0, 10);
   const gameData = {
-    questionGame: `${progressionNum(step, start, dot)}`,
+    questionGame: `${getProgression(step, start, dot)}`,
     correctAnswer: String(answer),
   };
   return gameData;
 };
-export default () => playGames(gameProgression, gameRule);
+export default () => playGames(getGameData, gameRule);

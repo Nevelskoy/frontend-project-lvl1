@@ -19,6 +19,15 @@
     "type": "git",
     "url": "git+https://github.com/Nevelskoy/frontend-project-lvl1.git"
   },
+  "keywords": [
+    "even",
+    "calc",
+    "gcd",
+    "progression",
+    "prime",
+    "brain-games",
+    "games in console"
+  ],
   "author": "Nevelskoy",
   "license": "ISC",
   "bugs": {
@@ -30,9 +39,6 @@
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1"

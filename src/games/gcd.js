@@ -3,19 +3,18 @@ import playGames from '../index.js';
 
 const gameRule = 'Find the greatest common divisor of given numbers.';
 
-const gcdNum = (numFirst, numSecond) => {
-  if (numSecond > numFirst) return gcdNum(numSecond, numFirst);
+const getDivisor = (numFirst, numSecond) => {
   if (!numSecond) return numFirst;
-  return gcdNum(numSecond, numFirst % numSecond);
+  return getDivisor(numSecond, numFirst % numSecond);
 };
 
-const gameGcd = () => {
-  const numFirst = getRandomInt(100);
-  const numSecond = getRandomInt(100);
+const getGameData = () => {
+  const numFirst = getRandomInt(0, 100);
+  const numSecond = getRandomInt(0, 100);
   const gameData = {
     questionGame: `${numFirst}  ${numSecond}`,
-    correctAnswer: String(gcdNum(numFirst, numSecond)),
+    correctAnswer: String(getDivisor(numFirst, numSecond)),
   };
   return gameData;
 };
-export default () => playGames(gameGcd, gameRule);
+export default () => playGames(getGameData, gameRule);
