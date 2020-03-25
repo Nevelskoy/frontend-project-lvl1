@@ -1,13 +1,13 @@
-import getRandomInt from '../randomNumber.js';
+import getRandomInt from '../utils.js';
 import playGames from '../index.js';
 
-const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   if (num <= 1) {
     return false;
   }
-  for (let i = 2; i < num; i += 1) {
+  for (let i = 2; i < 8; i += 1) {
     if (num % i === 0) {
       return false;
     }
@@ -16,11 +16,11 @@ const isPrime = (num) => {
 };
 
 const getGameData = () => {
-  const numRandom = getRandomInt(0, 100);
+  const numRandom = getRandomInt(1, 100);
   const gameData = {
-    questionGame: String(numRandom),
+    question: String(numRandom),
     correctAnswer: isPrime(numRandom) ? 'yes' : 'no',
   };
   return gameData;
 };
-export default () => playGames(getGameData, gameRule);
+export default () => playGames(getGameData, description);

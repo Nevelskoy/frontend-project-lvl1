@@ -1,35 +1,34 @@
-import getRandomInt from '../randomNumber.js';
+import getRandomInt from '../utils.js';
 import playGames from '../index.js';
 
-const gameRule = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 let answer = 0;
 
-const getHiddenNum = (array, dot) => {
-  answer = array[dot];
-  const newArr = array.splice(dot, 1, '..');
+const getHoleyArr = (array, hiddenNum) => {
+  answer = array[hiddenNum];
+  const newArr = array.splice(hiddenNum, 1, '..');
   return newArr;
 };
 
-const getProgression = (step, start, dot) => {
+const getProgression = (step, start, hiddenNum, lengthArray) => {
   const array = [];
-  for (let i = start; array.length < 10; i += 1) {
+  for (let i = start; array.length < lengthArray; i += 1) {
     i += step;
     array.push(i);
   }
-  getHiddenNum(array, dot);
+  getHoleyArr(array, hiddenNum);
   return array;
 };
 
 const getGameData = () => {
-  const interval = [2, 3, 4, 5, 6];
-  const stepRandom = getRandomInt(0, 4);
-  const step = interval[stepRandom];
+  const step = getRandomInt(2, 9);
   const start = getRandomInt(0, 100);
-  const dot = getRandomInt(0, 10);
+  const lengthArray = 10;
+  const hiddenNum = getRandomInt(0, lengthArray);
   const gameData = {
-    questionGame: `${getProgression(step, start, dot)}`,
+    question: `${getProgression(step, start, hiddenNum, lengthArray)}`,
     correctAnswer: String(answer),
   };
   return gameData;
 };
-export default () => playGames(getGameData, gameRule);
+export default () => playGames(getGameData, description);
