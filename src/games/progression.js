@@ -2,6 +2,8 @@ import getRandomInt from '../utils.js';
 import playGames from '../index.js';
 
 const description = 'What number is missing in the progression?';
+
+const lengthArray = 10;
 let answer = 0;
 
 const getHoleyArr = (array, hiddenNum) => {
@@ -10,7 +12,7 @@ const getHoleyArr = (array, hiddenNum) => {
   return newArr;
 };
 
-const getProgression = (step, start, hiddenNum, lengthArray) => {
+const getProgression = (step, start, hiddenNum) => {
   const array = [];
   for (let i = start; array.length < lengthArray; i += 1) {
     i += step;
@@ -23,10 +25,9 @@ const getProgression = (step, start, hiddenNum, lengthArray) => {
 const getGameData = () => {
   const step = getRandomInt(2, 9);
   const start = getRandomInt(0, 100);
-  const lengthArray = 10;
   const hiddenNum = getRandomInt(0, lengthArray);
   const gameData = {
-    question: `${getProgression(step, start, hiddenNum, lengthArray)}`,
+    question: `${getProgression(step, start, hiddenNum)}`,
     correctAnswer: String(answer),
   };
   return gameData;

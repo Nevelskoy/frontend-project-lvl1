@@ -1,12 +1,16 @@
-import getRandomInt, { signs } from '../utils.js';
+import getRandomInt from '../utils.js';
 import playGames from '../index.js';
 
 const description = 'What is the result of the expression?';
 
+const signs = ['+', '-', '*'];
 
 const calculation = (operator, numOne, numTwo) => {
   let answer;
   switch (operator) {
+    case '+':
+      answer = String(numOne + numTwo);
+      break;
     case '*':
       answer = String(numOne * numTwo);
       break;
@@ -14,7 +18,7 @@ const calculation = (operator, numOne, numTwo) => {
       answer = String(numOne - numTwo);
       break;
     default:
-      answer = String(numOne + numTwo);
+      throw new Error(`Unknown order state: '${operator}'!`);
   }
   return answer;
 };

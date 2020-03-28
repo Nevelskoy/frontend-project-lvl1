@@ -4,10 +4,8 @@ import playGames from '../index.js';
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
-  if (num <= 1) {
-    return false;
-  }
-  for (let i = 2; i < 8; i += 1) {
+  if (num <= 1) return false;
+  for (let i = 2; i < num / 2; i += 1) {
     if (num % i === 0) {
       return false;
     }
@@ -16,10 +14,10 @@ const isPrime = (num) => {
 };
 
 const getGameData = () => {
-  const numRandom = getRandomInt(1, 100);
+  const num = getRandomInt(1, 100);
   const gameData = {
-    question: String(numRandom),
-    correctAnswer: isPrime(numRandom) ? 'yes' : 'no',
+    question: String(num),
+    correctAnswer: isPrime(num) ? 'yes' : 'no',
   };
   return gameData;
 };
