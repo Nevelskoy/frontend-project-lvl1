@@ -26,10 +26,9 @@ const getGameData = () => {
   const step = getRandomInt(2, 9);
   const start = getRandomInt(0, 100);
   const hiddenNum = getRandomInt(0, lengthArray);
-  const gameData = {
+  return {
     question: `${getProgression(step, start, hiddenNum)}`,
     correctAnswer: String(answer),
   };
-  return gameData;
 };
 export default () => playGames(getGameData, description);

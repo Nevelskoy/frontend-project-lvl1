@@ -11,10 +11,9 @@ const getGcd = (numFirst, numSecond) => {
 const getGameData = () => {
   const numFirst = getRandomInt(0, 100);
   const numSecond = getRandomInt(0, 100);
-  const gameData = {
+  return {
     question: `${numFirst}  ${numSecond}`,
     correctAnswer: String(getGcd(numFirst, numSecond)),
   };
-  return gameData;
 };
 export default () => playGames(getGameData, description);
