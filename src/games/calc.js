@@ -3,33 +3,28 @@ import playGames from '../index.js';
 
 const description = 'What is the result of the expression?';
 
-const signs = ['+', '-', '*'];
+const operators = ['+', '-', '*'];
 
-const calculation = (operator, numOne, numTwo) => {
-  let answer;
+const calculate = (operator, numOne, numTwo) => {
   switch (operator) {
     case '+':
-      answer = String(numOne + numTwo);
-      break;
+      return numOne + numTwo;
     case '*':
-      answer = String(numOne * numTwo);
-      break;
+      return numOne * numTwo;
     case '-':
-      answer = String(numOne - numTwo);
-      break;
+      return numOne - numTwo;
     default:
       throw new Error(`Unknown order state: '${operator}'!`);
   }
-  return answer;
 };
 
 const getGameData = () => {
   const numOne = getRandomInt(0, 100);
   const numTwo = getRandomInt(0, 100);
-  const operator = signs[getRandomInt(0, 2)];
+  const operator = operators[getRandomInt(0, operators.length - 1)];
   return {
     question: `${numOne} ${operator} ${numTwo}`,
-    correctAnswer: calculation(operator, numOne, numTwo),
+    correctAnswer: String(calculate(operator, numOne, numTwo)),
   };
 };
 export default () => playGames(getGameData, description);

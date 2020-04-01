@@ -3,31 +3,25 @@ import playGames from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-const lengthArray = 10;
+const lengthProgression = 10;
 let answer = 0;
 
-const getHoleyArr = (array, hiddenNum) => {
-  answer = array[hiddenNum];
-  const newArr = array.splice(hiddenNum, 1, '..');
-  return newArr;
-};
-
-const getProgression = (step, start, hiddenNum) => {
-  const array = [];
-  for (let i = start; array.length < lengthArray; i += 1) {
-    i += step;
-    array.push(i);
+const getProgression = (step, start, numIndex) => {
+  const progression = [];
+  for (let current = start; progression.length < lengthProgression; current += step) {
+    progression.push(current);
   }
-  getHoleyArr(array, hiddenNum);
-  return array;
+  answer = progression[numIndex];
+  progression.splice(numIndex, 1, '..');
+  return progression;
 };
 
 const getGameData = () => {
   const step = getRandomInt(2, 9);
   const start = getRandomInt(0, 100);
-  const hiddenNum = getRandomInt(0, lengthArray);
+  const numIndex = getRandomInt(0, lengthProgression - 1);
   return {
-    question: `${getProgression(step, start, hiddenNum)}`,
+    question: `${getProgression(step, start, numIndex)}`,
     correctAnswer: String(answer),
   };
 };
