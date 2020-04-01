@@ -21,7 +21,7 @@ const getGameData = () => {
   const start = getRandomInt(0, 100);
   const numIndex = getRandomInt(0, lengthProgression - 1);
   return {
-    question: `${getProgression(step, start, numIndex)}`,
+    question: getProgression(step, start, numIndex),
     correctAnswer: String(answer),
   };
 };
