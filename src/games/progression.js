@@ -20,7 +20,8 @@ const getGameData = () => {
   const numIndex = getRandomInt(0, lengthProgression - 1);
   const progression = getProgression(step, start);
   const answer = progression[numIndex];
-  progression.splice(numIndex, 1, '..');
+  progression[numIndex] = '..';
+  progression.join();
   return {
     question: progression,
     correctAnswer: String(answer),
