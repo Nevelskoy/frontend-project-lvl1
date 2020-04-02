@@ -1,7 +1,7 @@
 # Welcome to the Brain Games!
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
-![Node.js CI](https://github.com/Nevelskoy/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/812ff9f1526be7de3c52/maintainability)](https://codeclimate.com/github/Nevelskoy/frontend-project-lvl1/maintainability)
+[![Node.js CI](https://github.com/Nevelskoy/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)](https://github.com/Nevelskoy/frontend-project-lvl1/actions)
 
 ### Description:
 This package includes 5 mini-games in console:
