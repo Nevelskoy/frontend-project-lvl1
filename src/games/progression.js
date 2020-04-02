@@ -11,7 +11,6 @@ const getProgression = (step, start) => {
   for (let current = start; progression.length < lengthProgression; current += step) {
     progression.push(current);
   }
-
   return progression;
 };
 
