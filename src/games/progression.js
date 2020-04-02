@@ -22,7 +22,7 @@ const getGameData = () => {
   const answer = progression[numIndex];
   progression[numIndex] = '..';
   return {
-    question: progression.join(),
+    question: progression.join(' '),
     correctAnswer: String(answer),
   };
 };
