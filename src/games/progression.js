@@ -21,9 +21,8 @@ const getGameData = () => {
   const progression = getProgression(step, start);
   const answer = progression[numIndex];
   progression[numIndex] = '..';
-  progression.join();
   return {
-    question: progression,
+    question: progression.join(),
     correctAnswer: String(answer),
   };
 };
