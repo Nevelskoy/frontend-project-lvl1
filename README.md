@@ -37,7 +37,8 @@ Just type in terminal name of the game:
 * brain-progression
 
 ---
-
+![alt text](src/Brain games.png project diagram)
+---
 Game #1. Even and odd Numbers.
 
 [![asciicast](https://asciinema.org/a/FP5emjpSNX194srIAHxcBLq6b.svg)](https://asciinema.org/a/FP5emjpSNX194srIAHxcBLq6b)
